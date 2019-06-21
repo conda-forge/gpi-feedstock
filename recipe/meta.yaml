@@ -25,6 +25,7 @@ requirements:
     - h5py
     - numpy >=1.11,<2
     - pillow
+    - {{ pin_compatible('python') }}
     - psutil
     - pyopengl
     - pyqt {{ pyqt }} # enforces qt at same version
