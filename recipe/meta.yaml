@@ -1,6 +1,6 @@
-{% set version = "1.0.6" %}
-{% set sha256 = "aa31f1e0b40917790d2db279621162dbaf201a8773edc1c058e744a118efa0ee" %}
-{% set build_num = "2" %}
+{% set version = "1.1.0rc" %}
+{% set sha256 = "2873c57d610aacb05a9c4692e23b4ae672d462f981f75a59f739255b82f85d36" %}
+{% set build_num = "0" %}
 
 package:
   name: gpi
@@ -27,7 +27,7 @@ requirements:
     - pillow
     - psutil
     - pyopengl
-    - pyqt =4 # enforces qt at same version
+    - pyqt  # enforces qt at same version
     - sip
     - qimage2ndarray
     - xorg-libsm
