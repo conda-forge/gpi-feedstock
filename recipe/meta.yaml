@@ -15,7 +15,7 @@ build:
   skip_compile_pyc:
     - "include/PyFI/*.py"
   skip: true  # [win]
-
+  skip: true  # [py2k]
 requirements:
   host:
     - python {{ python }}
