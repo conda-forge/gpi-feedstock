@@ -1,6 +1,6 @@
-{% set version = "1.1.0rc" %}
-{% set sha256 = "2873c57d610aacb05a9c4692e23b4ae672d462f981f75a59f739255b82f85d36" %}
-{% set build_num = "0" %}
+{% set version = "1.1.1rc" %}
+{% set sha256 = "5db6f703cb8e0afdc1840aaf0a8f2729e001bcabd02209f1049a5d6c6cc311ba" %}
+{% set build_num = "1" %}
 
 package:
   name: gpi
@@ -16,6 +16,7 @@ build:
     - "include/PyFI/*.py"
   skip: true  # [win]
   skip: true  # [py2k]
+
 requirements:
   host:
     - python {{ python }}
@@ -27,7 +28,9 @@ requirements:
     - pillow
     - psutil
     - pyopengl
+    - {{ pin_compatible('python') }}
     - pyqt  # enforces qt at same version
+    - qtpy
     - sip
     - qimage2ndarray
     - xorg-libsm
