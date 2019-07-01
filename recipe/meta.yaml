@@ -33,9 +33,6 @@ requirements:
     - qtpy
     - sip
     - qimage2ndarray
-#    - xorg-libsm  # [linux]
-#    - xorg-libxcb  # [linux]
-#    - xorg-libxrender  # [linux]
 
 test:
   imports:
