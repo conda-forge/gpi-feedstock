@@ -33,16 +33,16 @@ requirements:
     - qtpy
     - sip
     - qimage2ndarray
-    - xorg-libsm  # [linux]
-    - xorg-libxcb  # [linux]
-    - xorg-libxrender  # [linux]
+#    - xorg-libsm  # [linux]
+#    - xorg-libxcb  # [linux]
+#    - xorg-libxrender  # [linux]
 
 test:
   imports:
     - gpi
   commands:
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"  # [linux]
-    - gpi --help  # [osx]
+#    - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"  # [linux]
+    - gpi --help 
 
 about:
   home: http://gpilab.com

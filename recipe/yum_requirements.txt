@@ -1,2 +1,11 @@
 + mesa-libGL-devel
 + xorg-x11-server-Xvfb
++ libX11-devel
++ libXt-devel
++ libXext-devel
++ chrpath
++ libXrender-devel
++ gtk2-devel
++ dbus-devel
++ libSM-devel
++ libICE-devel
