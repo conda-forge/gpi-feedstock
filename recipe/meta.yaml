@@ -24,7 +24,6 @@ requirements:
     - eigen
     - fftw
     - h5py
-    - libxcb
     - numpy >=1.11,<2
     - pillow
     - psutil
@@ -35,6 +34,7 @@ requirements:
     - sip
     - qimage2ndarray
     - xorg-libsm
+    - xorg-libxcb
     - xorg-libxrender
 
 test:
