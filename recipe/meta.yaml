@@ -18,6 +18,8 @@ build:
   skip: true  # [py2k]
 
 requirements:
+  host:
+    - python {{ python }}
   run:
     - eigen
     - fftw
@@ -26,8 +28,8 @@ requirements:
     - pillow
     - psutil
     - pyopengl
-    - python {{ python }}
     - pyqt {{ pyqt }}
+    - {{ pin_compatible('python') }}
     - qtpy
     - sip
     - qimage2ndarray
