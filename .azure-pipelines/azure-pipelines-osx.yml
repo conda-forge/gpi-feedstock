@@ -10,12 +10,6 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      osx_pyqt4.11python3.6:
-        CONFIG: osx_pyqt4.11python3.6
-        UPLOAD_PACKAGES: True
-      osx_pyqt4.11python3.7:
-        CONFIG: osx_pyqt4.11python3.7
-        UPLOAD_PACKAGES: True
       osx_pyqt5.6python3.6:
         CONFIG: osx_pyqt5.6python3.6
         UPLOAD_PACKAGES: True

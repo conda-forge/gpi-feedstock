@@ -24,7 +24,8 @@ conda install --yes --quiet conda-forge-ci-setup=2 conda-build -c conda-forge
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
-source run_conda_forge_build_setup
+# Overriding global run_conda_forge_build_setup_linux with local copy.
+source ${RECIPE_ROOT}/run_conda_forge_build_setup_linux
 
 
 # Install the yum requirements defined canonically in the
