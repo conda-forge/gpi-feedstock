@@ -32,7 +32,7 @@ source ${RECIPE_ROOT}/run_conda_forge_build_setup_linux
 # "recipe/yum_requirements.txt" file. After updating that file,
 # run "conda smithy rerender" and this line will be updated
 # automatically.
-/usr/bin/sudo -n yum install -y + xorg-x11-server-Xvfb + gtk2-devel
+/usr/bin/sudo -n yum install -y + xorg-x11-server-Xvfb
 
 
 # make the build number clobber
