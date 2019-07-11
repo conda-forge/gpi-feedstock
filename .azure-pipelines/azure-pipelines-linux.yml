@@ -10,8 +10,20 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_:
-        CONFIG: linux_
+      linux_pyqt5.6python3.6:
+        CONFIG: linux_pyqt5.6python3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_pyqt5.6python3.7:
+        CONFIG: linux_pyqt5.6python3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_pyqt5.9python3.6:
+        CONFIG: linux_pyqt5.9python3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_pyqt5.9python3.7:
+        CONFIG: linux_pyqt5.9python3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:

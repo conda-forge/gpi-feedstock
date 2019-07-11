@@ -1,6 +1,6 @@
-{% set version = "1.0.6" %}
-{% set sha256 = "aa31f1e0b40917790d2db279621162dbaf201a8773edc1c058e744a118efa0ee" %}
-{% set build_num = "1" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "09e6c01c42c74489d3bb9a97b56614689c13a5d1b178ecfcc2c56c9192c75366" %}
+{% set build_num = "0" %}
 
 package:
   name: gpi
@@ -15,6 +15,7 @@ build:
   skip_compile_pyc:
     - "include/PyFI/*.py"
   skip: true  # [win]
+  skip: true  # [py2k]
 
 requirements:
   host:
@@ -25,14 +26,13 @@ requirements:
     - h5py
     - numpy >=1.11,<2
     - pillow
-    - python >=3.4
     - psutil
     - pyopengl
-    - pyqt {{ pyqt }} # enforces qt at same version
+    - pyqt {{ pyqt }}
+    - {{ pin_compatible('python') }}
+    - qtpy
     - sip
     - qimage2ndarray
-    - xorg-libsm
-    - xorg-libxrender
 
 test:
   imports:
@@ -40,6 +40,8 @@ test:
   commands:
     - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"  # [linux]
     - gpi --help  # [osx]
+#  downstreams:
+#    - gpi_core
 
 about:
   home: http://gpilab.com

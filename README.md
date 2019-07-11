@@ -36,17 +36,59 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux</td>
+              <td>linux_pyqt5.6python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=linux&configuration=linux_pyqt5.6python3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx</td>
+              <td>linux_pyqt5.6python3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=linux&configuration=linux_pyqt5.6python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_pyqt5.9python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=linux&configuration=linux_pyqt5.9python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_pyqt5.9python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=linux&configuration=linux_pyqt5.9python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_pyqt5.6python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=osx&configuration=osx_pyqt5.6python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_pyqt5.6python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=osx&configuration=osx_pyqt5.6python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_pyqt5.9python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=osx&configuration=osx_pyqt5.9python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_pyqt5.9python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6951&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpi-feedstock?branchName=master&jobName=osx&configuration=osx_pyqt5.9python3.7" alt="variant">
                 </a>
               </td>
             </tr>
