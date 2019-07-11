@@ -1,6 +1,6 @@
 {% set version = "1.1.2" %}
 {% set sha256 = "09e6c01c42c74489d3bb9a97b56614689c13a5d1b178ecfcc2c56c9192c75366" %}
-{% set build_num = "0" %}
+{% set build_num = "1" %}
 
 package:
   name: gpi
@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - python {{ python }}
+    - pyqt {{ pyqt }}
   run:
     - eigen
     - fftw
@@ -28,7 +29,7 @@ requirements:
     - pillow
     - psutil
     - pyopengl
-    - pyqt {{ pyqt }}
+    - {{ pin_compatible('pyqt') }}
     - {{ pin_compatible('python') }}
     - qtpy
     - sip
