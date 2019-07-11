@@ -34,4 +34,4 @@ echo "export PYTHONUNBUFFERED='${PYTHONUNBUFFERED}'"    >> "${CONDA_PREFIX}/etc/
 
 conda info
 conda config --show-sources
-conda list --show-channel-urlst
+conda list --show-channel-urls
