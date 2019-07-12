@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - {{ python }}
+    - python {{ python }}
   run:
     - eigen
     - fftw
