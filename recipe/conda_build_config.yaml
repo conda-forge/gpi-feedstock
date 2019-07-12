@@ -1,5 +1,4 @@
 ignore_version:
-  - python
   - pyqt
 
 python:

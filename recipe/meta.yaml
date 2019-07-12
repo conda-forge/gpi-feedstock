@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - {{ python }}
   run:
     - eigen
     - fftw
@@ -29,7 +29,7 @@ requirements:
     - psutil
     - pyopengl
     - pyqt >=5.6
-    - python >=3.6
+    - {{ pin_compatible('python') }}
     - qtpy
     - sip
     - qimage2ndarray
@@ -37,7 +37,6 @@ requirements:
 test:
   requires:
     - pyqt {{ pyqt }}
-    - python {{ python }}
   imports:
     - gpi
   commands:
