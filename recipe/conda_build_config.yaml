@@ -1,3 +1,7 @@
+ignore_version:
+  - python
+  - pyqt
+
 python:
   - 3.6
   - 3.7
