@@ -1,6 +1,6 @@
-{% set version = "1.1.4" %}
-{% set sha256 = "aa08b4553c876a8709657323b66ab11955e8ac5a9042f6b8d8c674d5d2745c52" %}
-{% set build_num = "1" %}
+{% set version = "1.1.5" %}
+{% set sha256 = "1b5a2102faff83325615f122d6f37042cefbf52caa040cdacd518afacee0cb21" %}
+{% set build_num = "0" %}
 
 package:
   name: gpi
