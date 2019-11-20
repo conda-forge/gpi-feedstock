@@ -24,7 +24,7 @@ requirements:
     - eigen
     - fftw
     - h5py
-    - numpy >=1.11,<2
+    - numpy >=1.14,<2
     - pillow
     - psutil
     - pyopengl
