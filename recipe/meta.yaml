@@ -1,6 +1,6 @@
 {% set version = "1.1.5" %}
 {% set sha256 = "1b5a2102faff83325615f122d6f37042cefbf52caa040cdacd518afacee0cb21" %}
-{% set build_num = "0" %}
+{% set build_num = "1" %}
 
 package:
   name: gpi
@@ -11,15 +11,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch:
+    python
   number: {{ build_num }}
   skip_compile_pyc:
     - "include/PyFI/*.py"
-  skip: true  # [win]
-  skip: true  # [py2k]
 
 requirements:
-  host:
-    - python {{ python }}
   run:
     - eigen
     - fftw
@@ -28,15 +26,13 @@ requirements:
     - pillow
     - psutil
     - pyopengl
-    - pyqt >=5.6
-    - {{ pin_compatible('python') }}
+    - pyqt >=5.6,<=5.9
+    - python >=3
     - qtpy
     - sip
     - qimage2ndarray
 
 test:
-  requires:
-    - pyqt {{ pyqt }} # this is to force tests on specific pyqt versions
   imports:
     - gpi
   commands:
