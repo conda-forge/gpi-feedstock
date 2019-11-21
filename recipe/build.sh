@@ -15,6 +15,7 @@ fi
 
 # Linux
 if [ "$(uname)" == "Linux" ]; then
+    mkdir $PREFIX/bin $PREFIX/include
     cp -R bin/* $PREFIX/bin/
     cp -R lib/gpi $SP_DIR
     cp -R include/* $PREFIX/include/
