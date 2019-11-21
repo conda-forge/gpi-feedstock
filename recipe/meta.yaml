@@ -23,6 +23,7 @@ requirements:
   run:
     - eigen
     - fftw
+    - gpi_core
     - h5py
     - numpy >=1.11,<2
     - pillow
