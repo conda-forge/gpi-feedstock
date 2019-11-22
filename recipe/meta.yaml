@@ -1,6 +1,4 @@
 {% set version = "1.1.5" %}
-{% set sha256 = "1b5a2102faff83325615f122d6f37042cefbf52caa040cdacd518afacee0cb21" %}
-{% set build_num = "1" %}
 
 package:
   name: gpi
@@ -8,19 +6,19 @@ package:
 
 source:
   url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 1b5a2102faff83325615f122d6f37042cefbf52caa040cdacd518afacee0cb21
 
 build:
-  noarch:
-    python
-  number: {{ build_num }}
+  noarch: python
+  number: 1
   skip_compile_pyc:
     - "include/PyFI/*.py"
 
 requirements:
   host:
-    - python
+    - python >=3
   run:
+    - python >=3
     - eigen
     - fftw
     - gpi_core
@@ -30,7 +28,6 @@ requirements:
     - psutil
     - pyopengl
     - pyqt >=5.6,<=5.9
-    - python >=3
     - qtpy
     - sip
     - qimage2ndarray
@@ -46,7 +43,7 @@ test:
 
 about:
   home: http://gpilab.com
-  license: GPL3
+  license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
   summary: "GPI - Graphical Programming Interface Development Framework"
