@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   skip_compile_pyc:
     - "include/PyFI/*.py"
 
@@ -21,7 +21,6 @@ requirements:
     - python >=3
     - eigen
     - fftw
-    - gpi_core
     - h5py
     - numpy >=1.11,<2
     - pillow
