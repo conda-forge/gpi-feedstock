@@ -21,7 +21,6 @@ requirements:
     - python >=3
     - eigen
     - fftw
-    - gpi_core
     - h5py
     - numpy >=1.11,<2
     - pillow
