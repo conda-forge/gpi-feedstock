@@ -1,16 +1,18 @@
-{% set version = "1.1.6" %}
+{% set version = "1.2.0" %}
 
 package:
   name: gpi
   version: {{ version }}
 
 source:
-  url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
-  sha256: 8a0cfa3b0b70935d35be33f83aa0b6383fd04a72eee50b7c54a0a5f29a8b9487
+#  url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
+#  sha256: 8a0cfa3b0b70935d35be33f83aa0b6383fd04a72eee50b7c54a0a5f29a8b9487
+  git_url: git@github.com:gpilab/framework.git
+  git_tag: windows
 
 build:
   noarch: python
-  number: 1
+  number: 0
   skip_compile_pyc:
     - "include/PyFI/*.py"
 
@@ -36,7 +38,7 @@ test:
     - gpi
   commands:
     - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"  # [linux]
-    - gpi --help  # [osx]
+    - gpi --help  # [osx,win]
   downstreams:
     - gpi_core
 
