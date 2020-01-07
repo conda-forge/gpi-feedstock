@@ -6,10 +6,10 @@ robocopy /E include\* %PREFIX%\include
 robocopy launch\gpi.command %PREFIX%\bin\gpi
 
 # copy licenses to lib dir
-robocopy LICENSE $SP_DIR\gpi\
-robocopy COPYING $SP_DIR\gpi\
-robocopy COPYING.LESSER $SP_DIR\gpi\
-robocopy AUTHORS $SP_DIR\gpi\
+robocopy LICENSE %SP_DIR%\gpi\
+robocopy COPYING %SP_DIR%\gpi\
+robocopy COPYING.LESSER %SP_DIR%\gpi\
+robocopy AUTHORS %SP_DIR%\gpi\
 
 # drop a version file with parseable info
 SET VERSION_FPATH=%SP_DIR%\gpi\VERSION
