@@ -7,7 +7,7 @@ package:
 source:
 #  url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
 #  sha256: 8a0cfa3b0b70935d35be33f83aa0b6383fd04a72eee50b7c54a0a5f29a8b9487
-  git_url: git@github.com:gpilab/framework.git
+  git_url: https://github.com/gpilab/framework.git
   git_tag: windows
 
 build:
