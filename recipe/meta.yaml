@@ -1,4 +1,4 @@
-{% set version = "1.1.6" %}
+{% set version = "1.2.0" %}
 
 package:
   name: gpi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
-  sha256: 8a0cfa3b0b70935d35be33f83aa0b6383fd04a72eee50b7c54a0a5f29a8b9487
+  sha256: ee842a1c3bf7d96e71222964136a516f5e00f059878eef61c520c891abd54af6
 
 build:
   noarch: python
@@ -32,11 +32,14 @@ requirements:
     - qimage2ndarray
 
 test:
+  requires:
+    - xorg-libsm
+    - xorg-libxcb
+    - xorg-libxrender
   imports:
     - gpi
   commands:
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"  # [linux]
-    - gpi --help  # [osx]
+    - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"
   downstreams:
     - gpi_core
 
