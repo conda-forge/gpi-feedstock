@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: gpi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
-  sha256: ed06162a6fb49baf90256158f09fc1503c4781ab641d4c3dc8d78f3212b47329
+  sha256: 6e00057bffe6b27069a097fb5432a5c2eec6205888cb2985956616a683dac40a 
 
 build:
   noarch: python
