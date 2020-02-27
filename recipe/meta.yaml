@@ -43,12 +43,6 @@ test:
   downstreams:
     - gpi_core
 
-app:
-    entry: gpi
-    icon: iclogo.png
-    summary: "Graphical Programming Interface"
-    own_environment: True
-
 about:
   home: http://gpilab.com
   license: GPL-3.0
