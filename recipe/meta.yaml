@@ -1,4 +1,4 @@
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 
 package:
   name: gpi
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
-  sha256: 425370884cce05eda5d2bda913d19ba9f20324da03745f8b0f053177f99c4eb9 
+  sha256: cc0a813f8494f0792797209153b8ba2162add6fe74480db994ffb8e67c8ce232
 
 build:
   noarch: python
-  number: 1
+  number: 0
   skip_compile_pyc:
-    - "include/PyFI/*.py"
+    - include/PyFI/*.py
 
 requirements:
   host:
@@ -44,17 +44,17 @@ test:
     - gpi_core
 
 app:
-    entry: gpi
-    icon: iclogo.png
-    summary: "Graphical Programming Interface"
-    own_environment: True
+  entry: gpi
+  icon: iclogo.png
+  summary: Graphical Programming Interface
+  own_environment: true
 
 about:
   home: http://gpilab.com
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: "GPI - Graphical Programming Interface Development Framework"
+  summary: GPI - Graphical Programming Interface Development Framework
   description: |
     GPI can be thought of as an integrated development environment for Python. 
     Algorithm elements (i.e., nodes) can be linked together to form a flow diagram
