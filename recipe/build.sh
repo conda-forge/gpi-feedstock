@@ -28,6 +28,7 @@ cp -R include/* $PREFIX/include/
 cp launch/gpi.command $PREFIX/bin/gpi
 # for Windows, indlude a batch script version
 cp launch/gpi_cmd.bat $PREFIX/bin/gpi.cmd
+cp launch/gpi_make.cmd $PREFIX/bin/gpi_make.cmd
 # (The shell should automatically pick up on the correct option)
 
 # copy licenses to lib dir
