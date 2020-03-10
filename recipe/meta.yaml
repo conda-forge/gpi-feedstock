@@ -37,6 +37,9 @@ test:
     - xorg-libsm
     - xorg-libxcb
     - xorg-libxrender
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cytoolz
   imports:
     - gpi
   downstreams:
