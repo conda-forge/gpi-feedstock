@@ -1,4 +1,4 @@
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 
 package:
   name: gpi
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/gpilab/framework/archive/v{{ version }}.tar.gz
-  sha256: cc0a813f8494f0792797209153b8ba2162add6fe74480db994ffb8e67c8ce232
+  sha256: 48b651f701c7e794898c86de878c5d497452fbdd46e9c337fa69aff47a87db9f
 
 build:
   noarch: python
-  number: 1
+  number: 0
   skip_compile_pyc:
     - include/PyFI/*.py
 
@@ -33,13 +33,15 @@ requirements:
 
 test:
   requires:
+    - wget
     - xorg-libsm
     - xorg-libxcb
     - xorg-libxrender
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cytoolz
   imports:
     - gpi
-  commands:
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"
   downstreams:
     - gpi_core
 
