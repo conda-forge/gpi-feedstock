@@ -38,8 +38,6 @@ test:
     - xorg-libxrender
   imports:
     - gpi
-  commands:
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c "gpi --help"
   downstreams:
     - gpi_core
 
