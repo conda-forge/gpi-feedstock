@@ -33,6 +33,7 @@ requirements:
 
 test:
   requires:
+    - wget
     - xorg-libsm
     - xorg-libxcb
     - xorg-libxrender
