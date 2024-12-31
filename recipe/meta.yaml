@@ -10,15 +10,15 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   skip_compile_pyc:
     - include/PyFI/*.py
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
   run:
-    - python >=3
+    - python >={{ python_min }}
     - eigen
     - fftw
     - h5py
@@ -40,6 +40,7 @@ test:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cytoolz
+    - python {{ python_min }}
   imports:
     - gpi
   downstreams:
